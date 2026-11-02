@@ -1,0 +1,31 @@
+name: HAKiosk
+options:
+  bundleIdPrefix: com.hakiosk
+  deploymentTarget:
+    iOS: "12.0"
+  createIntermediateGroups: true
+
+targets:
+  HAKiosk:
+    type: application
+    platform: iOS
+    deploymentTarget: "12.0"
+    sources:
+      - path: Sources
+    resources:
+      - path: Resources
+    settings:
+      base:
+        INFOPLIST_FILE: Sources/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.hakiosk.app
+        PRODUCT_NAME: HAKiosk
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "2"
+        SUPPORTS_MACCATALYST: "NO"
+        IPHONEOS_DEPLOYMENT_TARGET: "12.0"
+        ENABLE_BITCODE: "NO"
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGNING_REQUIRED: "NO"
+        CODE_SIGNING_ALLOWED: "NO"
+        CODE_SIGN_IDENTITY: ""
+        DEVELOPMENT_TEAM: ""

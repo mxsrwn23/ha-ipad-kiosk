@@ -1,0 +1,15 @@
+# XcodeGen generates this from project.yml — don't commit it
+HAKiosk.xcodeproj/
+
+# Build artifacts
+build/
+Payload/
+extracted/
+*.dSYM
+*.dSYM.zip
+HAKiosk.ipa
+
+.DS_Store
+
+# Lokale Claude-Code-Einstellungen (Berechtigungen etc.), maschinenspezifisch
+.claude/settings.local.json
